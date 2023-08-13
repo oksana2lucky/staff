@@ -3,10 +3,10 @@
 @section('content')
     <div class="row">
         <div class="col-md-6">
-            <a href="/" class="btn btn-primary mb-3">Add an employee</a>
+            <a href="/" class="btn btn-primary mb-3">Add an Employee</a>
         </div>
         <div class="col-md-6">
-            <a href="{{ route('noDepartmentEmployees') }}" class="btn btn-primary mb-3">No department employees</a>
+            <a href="{{ route('noDepartmentEmployees') }}" class="btn btn-primary mb-3">No Department Employees</a>
         </div>
     </div>
     <div class="row">
