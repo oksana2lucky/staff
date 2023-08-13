@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
 
 class Employee extends Model
 {
@@ -23,5 +24,10 @@ class Employee extends Model
     public function department()
     {
         return $this->belongsTo(Department::class);
+    }
+
+    public function getFormattedEmploymentDateAttribute()
+    {
+        return Carbon::createFromFormat('Y-m-d', $this->attributes['employment_date'])->format('d/m/Y');
     }
 }

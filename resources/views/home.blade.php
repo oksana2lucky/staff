@@ -6,7 +6,7 @@
             <a href="/" class="btn btn-primary mb-3">Add an employee</a>
         </div>
         <div class="col-md-6">
-            <a href="/" class="btn btn-primary mb-3">No department employees</a>
+            <a href="{{ route('noDepartmentEmployees') }}" class="btn btn-primary mb-3">No department employees</a>
         </div>
     </div>
     <div class="row">
